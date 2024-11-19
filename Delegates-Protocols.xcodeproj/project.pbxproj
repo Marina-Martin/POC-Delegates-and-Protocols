@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F2D4F312CED27F800E840E6 /* ProcolDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D4F302CED27F800E840E6 /* ProcolDelegate.swift */; };
 		EDFC882529378869003D6A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC882429378869003D6A1C /* AppDelegate.swift */; };
 		EDFC882729378869003D6A1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC882629378869003D6A1C /* SceneDelegate.swift */; };
 		EDFC882929378869003D6A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC882829378869003D6A1C /* ViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F2D4F302CED27F800E840E6 /* ProcolDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcolDelegate.swift; sourceTree = "<group>"; };
 		EDFC882129378869003D6A1C /* Delegates-Protocols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delegates-Protocols.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFC882429378869003D6A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFC882629378869003D6A1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 				EDFC882629378869003D6A1C /* SceneDelegate.swift */,
 				EDFC882829378869003D6A1C /* ViewController.swift */,
 				EDFC8838293788F0003D6A1C /* ProductSelectionVC.swift */,
-				9F2D4F302CED27F800E840E6 /* ProcolDelegate.swift */,
 				EDFC882A29378869003D6A1C /* Main.storyboard */,
 				EDFC882D2937886A003D6A1C /* Assets.xcassets */,
 				EDFC882F2937886A003D6A1C /* LaunchScreen.storyboard */,
@@ -147,7 +144,6 @@
 				EDFC882929378869003D6A1C /* ViewController.swift in Sources */,
 				EDFC882529378869003D6A1C /* AppDelegate.swift in Sources */,
 				EDFC882729378869003D6A1C /* SceneDelegate.swift in Sources */,
-				9F2D4F312CED27F800E840E6 /* ProcolDelegate.swift in Sources */,
 				EDFC8839293788F0003D6A1C /* ProductSelectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

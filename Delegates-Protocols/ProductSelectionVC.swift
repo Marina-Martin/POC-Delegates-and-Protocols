@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ProductSelectionDelegate {
+    func didSelectProduct(name: String, imageName: String)
+}
+
 class ProductSelectionVC: UIViewController {
 
     let iPhoneButton = UIButton()

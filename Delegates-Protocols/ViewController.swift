@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, ProductSelectionDelegate {
+class ViewController: UIViewController {
     
     let productImageView = UIImageView()
     let productNameLabel = UILabel()
@@ -16,11 +16,6 @@ class ViewController: UIViewController, ProductSelectionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-    }
-    
-    func didSelectProduct(name: String, imageName: String) {
-        productNameLabel.text = name
-        productImageView.image = UIImage(named: imageName)
     }
 
     @objc func presentProductSelectionVC() {
@@ -76,3 +71,9 @@ class ViewController: UIViewController, ProductSelectionDelegate {
     }
 }
 
+extension ViewController: ProductSelectionDelegate{
+    func didSelectProduct(name: String, imageName: String) {
+        productNameLabel.text = name
+        productImageView.image = UIImage(named: imageName)
+    }
+}
