@@ -13,22 +13,27 @@ class ProductSelectionVC: UIViewController {
     let iPadButton = UIButton()
     let macBookButton = UIButton()
 
+    var delegate: ProductSelectionDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
 
     @objc func iPhoneButtonTapped() {
+        delegate?.didSelectProduct(name: "iPhone", imageName: "iphone")
         dismiss(animated: true)
     }
 
 
     @objc func iPadButtonTapped() {
+        delegate?.didSelectProduct(name: "iPad", imageName: "ipad")
         dismiss(animated: true)
     }
 
 
     @objc func macBookButtonTapped() {
+        delegate?.didSelectProduct(name: "MacBook", imageName: "mac")
         dismiss(animated: true)
     }
     

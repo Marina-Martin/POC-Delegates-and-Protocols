@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ProductSelectionDelegate {
+    
     let productImageView = UIImageView()
     let productNameLabel = UILabel()
     let chooseProductButton = UIButton()
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-
+    
     func didSelectProduct(name: String, imageName: String) {
         productNameLabel.text = name
         productImageView.image = UIImage(named: imageName)
@@ -25,6 +25,7 @@ class ViewController: UIViewController {
 
     @objc func presentProductSelectionVC() {
         let destinationVC = ProductSelectionVC()
+        destinationVC.delegate = self
 
         destinationVC.modalPresentationStyle = .pageSheet
         destinationVC.sheetPresentationController?.detents = [.medium()]
